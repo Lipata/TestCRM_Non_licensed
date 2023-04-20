@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Travel_app_1</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IgniteUI.Blazor.Trial" Version="22.2.65" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Shared/Home.razor.css" CssScope="home-scope" />
+    <None Update="Pages/Home/Login.razor.css" CssScope="login-scope" />
+    <None Update="Pages/Home/Reset_password.razor.css" CssScope="reset_password-scope" />
+    <None Update="Pages/Home/Set_new_password.razor.css" CssScope="set_new_password-scope" />
+    <None Update="Pages/Home/Sign_up.razor.css" CssScope="sign_up-scope" />
+    <None Update="Shared/In_App.razor.css" CssScope="in_app-scope" />
+    <None Update="Pages/In_App/Dashboard.razor.css" CssScope="dashboard-scope" />
+    <None Update="Pages/In_App/Articles.razor.css" CssScope="articles-scope" />
+  </ItemGroup>
+</Project>

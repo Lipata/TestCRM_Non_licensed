@@ -1,0 +1,47 @@
+@page "/sign_up"
+@inject NavigationManager NavigationManager
+
+<div class="row-layout sign-up-container">
+    <div class="column-layout left">
+        <div class="column-layout form">
+            <div class="column-layout group">
+                <div class="column-layout group_1">
+                    <h3 class="h3">
+                        Sign up
+                    </h3>
+                    <p class="typography__body-2 text">
+                        Don't have an account? Sign up now for free and enjoy thousands of great travel opportunities
+                    </p>
+                </div>
+                <IgbInput Label="Email" Placeholder="myname@website.com" Outlined="true" class="input" sign_up-scope></IgbInput>
+                <IgbInput Label="Password" Placeholder="Min 8 characters" Outlined="true" class="input" sign_up-scope></IgbInput>
+                <IgbInput Label="Repeat Password" Placeholder="Min 8 characters" Outlined="true" class="input" sign_up-scope></IgbInput>
+                <div class="row-layout group_2">
+                    <div class="row-layout group_3">
+                        <IgbCheckbox LabelPosition="CheckboxBaseLabelPosition.After" Checked="true" Indeterminate="false" class="checkbox" sign_up-scope>
+                            Remember me
+                        </IgbCheckbox>
+                    </div>
+                </div>
+                <IgbButton Size="SizableComponentSize.Large" @onclick="@(e => Navigate("in_app"))" class="button button_2" sign_up-scope>
+                    sign up
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
+            <div class="column-layout group_4">
+                <IgbButton Variant="ButtonVariant.Outlined" Size="SizableComponentSize.Large" @onclick="@(e => Navigate(""))" class="button_1 button_1_1" sign_up-scope>
+                    Already have a registration?
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
+        </div>
+    </div>
+    <div class="column-layout right"></div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

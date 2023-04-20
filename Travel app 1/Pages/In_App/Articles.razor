@@ -1,0 +1,222 @@
+@page "/in_app/articles"
+@using TravelApp
+@using Northwind
+@inject ITravelAppService travelAppService
+
+<div class="row-layout articles-container">
+    <div class="row-layout group">
+        <div class="row-layout group_1">
+            <div class="column-layout group_2">
+                <h6 class="h6">
+                    All articles
+                </h6>
+                <div class="row-layout group_3">
+                    <div class="column-layout group_4">
+                        @foreach (var item in travelAppSelectedArticles)
+                        {
+                            <IgbCard Outlined="true" class="card" articles-scope>
+                                <IgbCardMedia class="media-content" articles-scope>
+                                    <img src="@item.Image_url" class="image" />
+                                </IgbCardMedia>
+                                <IgbCardHeader>
+                                    <h3 slot="title">
+                                        @item.Title
+                                    </h3>
+                                    <h5 slot="subtitle">
+                                        @item.Subtitle
+                                    </h5>
+                                </IgbCardHeader>
+                                <IgbCardActions class="actions-content" articles-scope>
+                                    <IgbButton Variant="ButtonVariant.Flat" Size="SizableComponentSize.Large" class="button" articles-scope>
+                                        Read
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                                        <span class="material-icons">
+                                            bookmark_border
+                                        </span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbIconButton>
+                                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                                        <span class="material-icons">
+                                            share
+                                        </span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbIconButton>
+                                </IgbCardActions>
+                            </IgbCard>
+                        }
+                    </div>
+                    <div class="column-layout group_4">
+                        @foreach (var item in travelAppSelectedArticles1)
+                        {
+                            <IgbCard Outlined="true" class="card" articles-scope>
+                                <IgbCardMedia class="media-content" articles-scope>
+                                    <img src="@item.Image_url" class="image" />
+                                </IgbCardMedia>
+                                <IgbCardHeader>
+                                    <h3 slot="title">
+                                        @item.Title
+                                    </h3>
+                                    <h5 slot="subtitle">
+                                        @item.Subtitle
+                                    </h5>
+                                </IgbCardHeader>
+                                <IgbCardActions class="actions-content" articles-scope>
+                                    <IgbButton Variant="ButtonVariant.Flat" Size="SizableComponentSize.Large" class="button" articles-scope>
+                                        Read
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                                        <span class="material-icons">
+                                            bookmark_border
+                                        </span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbIconButton>
+                                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                                        <span class="material-icons">
+                                            share
+                                        </span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbIconButton>
+                                </IgbCardActions>
+                            </IgbCard>
+                        }
+                    </div>
+                    <div class="column-layout group_4">
+                        @foreach (var item in travelAppSelectedArticles2)
+                        {
+                            <IgbCard Outlined="true" class="card" articles-scope>
+                                <IgbCardMedia class="media-content" articles-scope>
+                                    <img src="@item.Image_url" class="image" />
+                                </IgbCardMedia>
+                                <IgbCardHeader>
+                                    <h3 slot="title">
+                                        @item.Title
+                                    </h3>
+                                    <h5 slot="subtitle">
+                                        @item.Subtitle
+                                    </h5>
+                                </IgbCardHeader>
+                                <IgbCardActions class="actions-content" articles-scope>
+                                    <IgbButton Variant="ButtonVariant.Flat" Size="SizableComponentSize.Large" class="button" articles-scope>
+                                        Read
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                                        <span class="material-icons">
+                                            bookmark_border
+                                        </span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbIconButton>
+                                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                                        <span class="material-icons">
+                                            share
+                                        </span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbIconButton>
+                                </IgbCardActions>
+                            </IgbCard>
+                        }
+                    </div>
+                    <div class="column-layout group_5">
+                        @foreach (var item in travelAppSelectedArticles3)
+                        {
+                            <IgbCard Outlined="true" class="card" articles-scope>
+                                <IgbCardMedia class="media-content" articles-scope>
+                                    <img src="@item.Image_url" class="image" />
+                                </IgbCardMedia>
+                                <IgbCardHeader>
+                                    <h3 slot="title">
+                                        @item.Title
+                                    </h3>
+                                    <h5 slot="subtitle">
+                                        @item.Subtitle
+                                    </h5>
+                                </IgbCardHeader>
+                                <IgbCardActions class="actions-content" articles-scope>
+                                    <IgbButton Variant="ButtonVariant.Flat" Size="SizableComponentSize.Large" class="button" articles-scope>
+                                        Read
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                                        <span class="material-icons">
+                                            bookmark_border
+                                        </span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbIconButton>
+                                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                                        <span class="material-icons">
+                                            share
+                                        </span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbIconButton>
+                                </IgbCardActions>
+                            </IgbCard>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column-layout group_6">
+            <div class="column-layout group_7">
+                <h6 class="h6">
+                    Recommended
+                </h6>
+                <div class="column-layout group_8">
+                    @foreach (var item in travelAppSelectedArticles4)
+                    {
+                        <IgbCard Outlined="true" class="card" articles-scope>
+                            <IgbCardMedia class="media-content_1" articles-scope>
+                                <img src="@item.Image_url" class="image" />
+                            </IgbCardMedia>
+                            <IgbCardHeader>
+                                <h3 slot="title">
+                                    @item.Title
+                                </h3>
+                                <h5 slot="subtitle">
+                                    @item.Subtitle
+                                </h5>
+                            </IgbCardHeader>
+                            <IgbCardActions class="actions-content" articles-scope>
+                                <IgbButton Variant="ButtonVariant.Flat" Size="SizableComponentSize.Large" class="button" articles-scope>
+                                    Read
+                                    <IgbRipple></IgbRipple>
+                                </IgbButton>
+                                <IgbIconButton Variant="IconButtonVariant.Flat">
+                                    <span class="material-icons">
+                                        bookmark_border
+                                    </span>
+                                    <IgbRipple></IgbRipple>
+                                </IgbIconButton>
+                                <IgbIconButton Variant="IconButtonVariant.Flat">
+                                    <span class="material-icons">
+                                        share
+                                    </span>
+                                    <IgbRipple></IgbRipple>
+                                </IgbIconButton>
+                            </IgbCardActions>
+                        </IgbCard>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<SelectedArticlesType> travelAppSelectedArticles = new();
+    private List<SelectedArticlesType> travelAppSelectedArticles1 = new();
+    private List<SelectedArticlesType> travelAppSelectedArticles2 = new();
+    private List<SelectedArticlesType> travelAppSelectedArticles3 = new();
+    private List<SelectedArticlesType> travelAppSelectedArticles4 = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        travelAppSelectedArticles = await travelAppService.GetSelectedArticles();
+        travelAppSelectedArticles1 = await travelAppService.GetSelectedArticles();
+        travelAppSelectedArticles2 = await travelAppService.GetSelectedArticles();
+        travelAppSelectedArticles3 = await travelAppService.GetSelectedArticles();
+        travelAppSelectedArticles4 = await travelAppService.GetSelectedArticles();
+    }
+}
